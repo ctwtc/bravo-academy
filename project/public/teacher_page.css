@@ -1,0 +1,205 @@
+body {
+  padding-top: 44px;
+}
+
+.word-inside-image {
+  height: 580px;
+  background-image: url("./assets/Rectangle2-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-content {
+  color: white;
+  text-align: center;
+}
+h2 {
+  padding-bottom: 20px;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selection > div {
+  border: 1px solid white;
+  color: white;
+  border-radius: 49px;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 550px;
+  max-height: 200px;
+}
+
+.inner-column {
+  background: #222222;
+  border: solid #222222 1px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.picture {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.picture > img {
+  border-radius: 50%;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+}
+.picture > div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.picture > div {
+  background: #30a57b;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 40px;
+  justify-content: center;
+  text-align: center;
+}
+.teacherDescription {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.teacherDescription > div {
+  /* margin-bottom: 10px; */
+  padding: 10px;
+}
+.des-head {
+  width: 80%;
+}
+.des-content {
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.des-head {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.des-icon {
+  display: flex;
+}
+
+.des-icon i {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #30a57b;
+}
+.des-content {
+  color: #999;
+  font-size: 16px;
+}
+.des-price > p1 {
+  color: white;
+  font-size: 25px;
+}
+.des-price > p2 {
+  font-size: 12px;
+  color: white;
+  color: #888888;
+}
+
+.dropdown-menu {
+  cursor: pointer;
+}
+
+a {
+  text-decoration-line: none;
+  color: white;
+}
+
+.iconClicked span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 414px) {
+  .inner-column {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .word-inside-image {
+    height: 300px;
+  }
+
+  h2,
+  h6 {
+    font-size: 15px;
+  }
+  .picture {
+    display: flex;
+    flex-direction: column;
+  }
+  .picture > img {
+    width: 200px;
+    height: 200px;
+  }
+  .teacherDescription {
+    margin: 10px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .teacherDescription > div {
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+  }
+  .teacherDescription div > p1 {
+    font-size: 12px;
+  }
+  .teacherDescription div > p2 {
+    font-size: 12px;
+  }
+  .selection {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .word-inside-image {
+    height: 300px;
+  }
+
+  .picture > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .picture > div {
+    width: 150px;
+  }
+  .teacherDescription {
+    width: 80%;
+  }
+  .inner-column {
+    padding: 0 10px;
+  }
+}

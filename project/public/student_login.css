@@ -1,0 +1,279 @@
+body {
+  background: black;
+  width: 100%;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.student-image {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+.student-pic {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+.student-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.student-tag {
+  text-align: center;
+  background: skyblue;
+  border-radius: 25px;
+  width: 250px;
+  height: 40px;
+  font-size: 25px;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.course-title {
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.form-label {
+  color: white;
+}
+
+.whole-remark {
+  display: flex;
+  justify-content: space-between;
+}
+.studentRemark {
+  width: 48%;
+}
+.white-holder {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  padding: 20px;
+}
+.black-holder {
+  background-color: white;
+  color: black;
+
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  padding: 20px;
+}
+.whole-remark {
+  border-top: #666 solid 1px;
+}
+.des-head {
+  
+  white-space: pre-wrap;
+  
+}
+.des-content {
+  white-space: nowrap;
+ 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  width: 80%;
+  padding:10px
+  
+}
+.description > div {
+  padding: 10px;
+}
+.whole-remark {
+  background-color: white;
+  padding: 20px;
+}
+
+.bi-trash {
+  color: #30a57b;
+  font-size: 20px;
+}
+.trashClicked span {
+  font-size: 14px;
+  color: white;
+  font-style: normal;
+}
+
+.sub-range {
+  background-color: #000 !important;
+  border-radius: 50px !important;
+  border: 1px solid #fff !important;
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media  (min-width:415px) and (max-width: 900px) {
+  .student-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .student-tag {
+    width: 200px;
+  }
+  .picture > img {
+    width: 120px;
+    height: 120px;
+  }
+  .picture > div {
+    font-size: 15px;
+  }
+  .inner-column {
+    display: flex;
+  }
+  .studentRemark {
+    width: 100%;
+  }
+  .whole-remark {
+    display: flex;
+    flex-direction: column;
+  }
+  .des-head {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    width: 52%;
+  }
+  .des-content {
+    color: #999;
+    font-size: 18px;
+    width:60%
+  }
+  .des-icon i {
+    font-size: 15px;
+  }
+  .des-price > p1 {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .whole-remark {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+  .studentRemark {
+    width: 100%;
+    padding: 10px;
+  }
+  .whole-remark {
+    padding: 0px;
+    margin: 0;
+  }
+
+  .picture {
+    display: flex;
+    flex-direction: column;
+  }
+  .picture > div {
+    margin: 0;
+  }
+  .picture > img {
+    width: 150px;
+    height: 150px;
+  }
+  .des-head {
+    width: 100%;
+  }
+
+  .description > div {
+    padding: 5px;
+  }
+  .description div > p1 {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .description div > p2 {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .des-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .des-price {
+    margin-bottom: 5px;
+  }
+}
+
+
+@media  (min-width:901px) and (max-width: 1200px) {
+  .student-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .student-tag {
+    width: 200px;
+  }
+  .picture > img {
+    width: 120px;
+    height: 120px;
+  }
+  .picture > div {
+    font-size: 15px;
+  }
+  .inner-column {
+    display: flex;
+  }
+  .studentRemark {
+    width: 100%;
+  }
+  .whole-remark {
+    display: flex;
+    flex-direction: column;
+  }
+  .des-head {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  
+  }
+  .des-content {
+    color: #999;
+    font-size: 18px;
+   
+  }
+  .des-icon i {
+    font-size: 15px;
+  }
+  .des-price > p1 {
+    color: white;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,145 @@
+/* This file contains the css code for the teacher user comment page */
+
+body {
+  background: black;
+  width: 100%;
+}
+
+.userCommentContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#commentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.fa-comment-dots {
+  color: #30a57b;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.commentBox {
+  box-sizing: border-box;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #222;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 48%;
+}
+
+.commentPic > img {
+  width: 100%;
+
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#commentTitle h3 {
+  color: #fff;
+  font-weight: 600;
+  padding: 30px 0px 20px 0px;
+  font-size: 50px;
+}
+
+#commentDescription {
+  color: #888888;
+  font-size: 22px;
+  padding: 0px 0px 50px 0px;
+}
+
+.commentNameSubject {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.commentName {
+  color: #fff;
+  font-weight: 500;
+  font-size: 32px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.commentSubject {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #30a57b;
+  text-align: center;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 8px;
+}
+
+.commentPic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.commentUserInfo {
+  color: #888888;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.commentText {
+  color: #888888;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border-top: 1px solid #fff;
+}
+
+@media screen and (max-width: 414px) {
+  .commentBox {
+    box-sizing: border-box;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #222;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .commentName {
+    font-size: 20px;
+  }
+
+  .commentPic {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 900px) {
+  .commentBox {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
